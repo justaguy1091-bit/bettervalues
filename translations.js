@@ -187,6 +187,7 @@ const TRANSLATIONS = {
             "suzerainty": "Suzerainty",
             "anti_organizationalism": "Anti-Organizationalism",
             "cybernetic_socialism": "Cybernetic Socialism",
+            "cyberunionism": "Cyberunionism"
             "regressive_taxation": "Regressive Taxation",
             "patchwork": "Patchwork",
             "state_enterprise_revenue": "State Enterprise Revenue",
@@ -269,7 +270,7 @@ const TRANSLATIONS = {
             "Social Gaullism": "A reformist current of Gaullism rooted in the initiatives of Jacques Chaban-Delmas and Philippe Séguin. It emphasizes de Gaulle's 'Capital-Labor Association' through employee profit-sharing and co-determination, while supporting public services, progressive social policy, and administrative regional devolution within a patriotic framework.",
             "Neo-Gaullism": "The market-oriented modernization of Gaullism developed by Jacques Chirac and Alain Juppé from the 1980s onward. It retains a strong presidential executive, national defense posture, and patriotic rhetoric, but abandons classical state economic planning in favor of fiscal discipline, market deregulation, privatization, and European integration.",
             "Bonapartist Gaullism": "The providential and plebiscitary tradition of Gaullism inspired by the founding phase of the Fifth Republic (1958–1962). Skeptical of parliamentary party regimes, it unites the nation under strong, centralized executive authority legitimized through direct citizen referendums, combined with state-led strategic industry, nuclear independence, and national discipline.",
-            "One-Nation Conservatism": "Also known as Tory Democracy, an economically center-left and culturally center-right British conservative tradition founded by Benjamin Disraeli. Viewing society as organic, it combines loyalty to established institutions with Keynesian welfare and working-class social programs.",
+            "Paternalistic Conservatism": "An economically center-left and culturally center-right conservative tradition. It views that the state and the wealthy ought to help out the less fortunate while upholding moral values.",
             "Conservative Technoliberalism": "A variant of technoliberalism that combines rapid technological acceleration, ecomodernism, and social safety nets with the preservation of traditional cultural values.",
             "Right-Social Authoritarianism": "Also known as Capitalist Social Authoritarianism, a Machiavellian variant of social authoritarianism aligned with right-social democracy. Leaders balance strategic welfare benefits or austerity cuts with heavy reliance on police forces to pacify opposition (exemplified by figures like Giovanni Giolitti, Nursultan Nazarbayev, and Marcos Pérez Jiménez).",
             "Kjærsgaardism": "A Danish national-conservative and welfare-chauvinist ideology established by Pia Kjærsgaard and the Danish People's Party (DF). It defends the Scandinavian universal welfare state, social pensions, and public healthcare for native citizens while enforcing strict assimilation, immigration restrictions, and cultural defense against Islam and globalization.",
@@ -353,6 +354,7 @@ const TRANSLATIONS = {
             "American Technocracy": "The radical post-capitalist model formulated by Howard Scott and Technocracy Inc. in the 1930s. It advocates for the total abolition of the 'Price System', private finance, and partisan politics, placing continental industry under the direct management of scientists and engineers who distribute goods equally through thermodynamic energy accounting within a self-sufficient North American Technate.",
             "Fabian Socialism": "A British reformist socialist school founded in 1884 that rejects violent revolution in favor of gradual parliamentary permeation. It advocates for the incremental public ownership of key utilities, progressive taxation, an educated technocratic civil service, and municipal socialism ('Gas and Water Socialism').",
             "Ujamaa": "A distinct form of African socialism theorized by Tanzania's first president, Julius Nyerere, in the 1967 Arusha Declaration. Meaning 'Familyhood' in Swahili, it rejects both capitalism and Marxist class war, centering society on collective rural farming villages (Vijiji vya Ujamaa), moral self-reliance, and non-aligned Pan-African solidarity.",
+            "Cybersyndicalism": "A form of syndicalism that is like regular syndicalism, but with cybernetic planning to help coordinate the workplace. It is more tech-optimistic than regular syndicalism as it favors slight automation over pure human craft.",
 
             /* 8. Marxist */
             "Italian Left Communism": "A variant that rejects parliamentarianism and trade unions, emphasizing a pure Marxist party. It critiques the USSR as state capitalist and advocates for a global, uncompromising proletarian revolution.",
@@ -385,6 +387,7 @@ const TRANSLATIONS = {
             "Gandhian Socialism": "A philosophy developed by Mahatma Gandhi (Sarvodaya) grounded in spiritual metaphysics and village self-reliance. It advocates for worker-cooperative market socialism, direct village democracy (Panchayati Raj), peaceful internationalism, and the preservation of decentralized artisan craft over ecocidal industrial machinery.",
             "Scythianism": "A romantic, anti-modern revolutionary movement in 1917 Russia inspired by Alexander Blok and Andrei Bely. Rejecting Western industrial rationalism, it champions an untamed, Dionysian socialist revival rooted in nomadic steppe vitality, agrarian communalism, and complete spiritual liberation.",
             "Proutism": "Progressive Utilization Theory (PROUT), a progressive libertarian-left philosophy theorized by Prabhat Ranjan Sarkar in 1959. Rejecting both capitalism and communism, it advocates for economic democracy, locally self-sufficient cooperative zones, a world federation, and universal rights for humans, animals, and plants.",
+            "Rembowskism": "A libertarian marxist ideology that rejects reform and vanguardism. Instead opting for worker-owned councils that confederate horizontally. Civically, it advocates for a 5 tier council system with subsidiarity. It believes genetic modification and technological acceleration harms the environment, therefore it is a very bioconservative and environmentalist ideology. It is also more culturally conservative than most other ideologies of its type.",
 
             /* 10. Centre-Libertarian */
             "Geolibertarianism": "A synthesis of libertarianism and Georgism. It asserts that individuals own their labor, but land and natural resources are common property, often advocating for a land value tax to fund limited government functions.",
@@ -504,7 +507,8 @@ const TRANSLATIONS = {
             "parecon": "An anti-market, decentralized socialist model where nested worker and consumer councils democratically plan production and allocate goods based on individual effort and sacrifice rather than state decrees or market prices.",
             "corporatocracy": "An oligarchic economic order where politically entrenched megacorporations monopolize key industries through state subsidies, regulatory capture, and legal privileges, subordinating free competition to corporate cartels.",
             "hierarchical_communism": "The proprietary corporatist doctrine formulated by Ugo Spirito, advocating the transfer of private corporations into collective worker-owned entities while preserving technical hierarchy, meritocratic management, and organic integration with the state.",
-            "cybernetic_socialism": "A planned socialist model in which production and distribution are dynamically coordinated through computer networks, algorithmic optimization, and real-time data feedback rather than market prices or rigid bureaucracy.",
+            "cybernetic_socialism": "A planned socialist model in which production and distribution are centrally coordinated through computer networks, algorithmic optimization, and real-time data feedback rather than market prices or rigid bureaucracy.",
+            "cyberunionism": "A decentralized version of cybernetic socialism. It believes the workers should directly own the means of production, but let AI plan production for them. That way workers can spend more time producing rather than relying on slow democratic processes.",
             "ghent_system": "A welfare model in which unemployment insurance and social benefit funds are administered primarily by trade unions rather than directly by state bureaucracies, encouraging high union membership and decentralized worker solidarity alongside a market economy.",
 
             /* Resource Management Values */
@@ -845,6 +849,7 @@ const TRANSLATIONS = {
             "suzerainty": "Сюзеренітет",
             "anti_organizationalism": "Антиорганізаціоналізм",
             "cybernetic_socialism": "Кібернетичний соціалізм",
+            "cyberunionism": "Кіберюніонізм"
             "regressive_taxation": "Регресивне оподаткування",
             "patchwork": "Печворк",
             "state_enterprise_revenue": "Доходи держпідприємств",
@@ -1011,6 +1016,7 @@ const TRANSLATIONS = {
             "American Technocracy": "Радикальна постмодель капіталізму, сформульована Говардом Скоттом та організацією Technocracy Inc. у 1930-х роках. Вона виступає за повне скасування «цінової системи», приватних фінансів і партійної політики, передаючи континентальну промисловість під пряме управління вчених та інженерів, які розподіляють товари порівну за допомогою термодинамічного енергетичного обліку в межах самодостатнього Північноамериканського технонату.",
             "Fabian Socialism": "Британська реформістська соціалістична школа, заснована 1884 року, яка відкидає насильницьку революцію на користь поступового парламентського проникнення. Вона виступає за поетапне суспільне володіння ключовими комунальними підприємствами, прогресивне оподаткування, освічену технократичну громадянську службу та муніципальний соціалізм («газовий і водяний соціалізм»).",
             "Ujamaa": "Особлива форма африканського соціалізму, теоретично обґрунтована першим президентом Танзанії Джуліусом Ньєрере в Аруській декларації 1967 року. Означаючи «сімейність» мовою суахілі, вона відкидає як капіталізм, так і марксистську класову боротьбу, центруючи суспільство навколо колективних сільських фермерських сіл (Vijiji vya Ujamaa), морального самозабезпечення та позаблокової панафриканської солідарності.",
+            "Cybersyndicalism": "Різновид синдикалізму, подібний до звичайного синдикалізму, але з використанням кібернетичного планування для координації роботи на виробництві. Він вирізняється більшим технооптимізмом, ніж традиційний синдикалізм, оскільки надає перевагу частковій автоматизації перед виключно ручною працею.",
 
             /* 8. Marxist */
             "Italian Left Communism": "Варіант, що відкидає парламентаризм і профспілки та підкреслює роль чистої марксистської партії. Він критикує СРСР як державний капіталізм і виступає за глобальну, безкомпромісну пролетарську революцію.",
@@ -1043,6 +1049,7 @@ const TRANSLATIONS = {
             "Gandhian Socialism": "Філософія, розроблена Магатмою Ганді (Сарводая), заснована на духовній метафізиці та сільській самозабезпеченості. Вона виступає за ринковий соціалізм на основі робітничих кооперативів, пряму сільську демократію (панчаяті радж), мирний інтернаціоналізм і збереження децентралізованих ремесел замість екоцидної промислової техніки.",
             "Scythianism": "Романтичний, антимодерністський революційний рух у Росії 1917 року, натхненний Олександром Блоком та Андрієм Білим. Відкидаючи західний промисловий раціоналізм, він обстоює дике, діонісійське соціалістичне відродження, вкорінене в кочовій степовій вітальності, аграрному комунітаризмі та повному духовному визволенні.",
             "Proutism": "Прогресивна лібертарно-ліва філософія, теоретично обґрунтована Прабхатом Ранджаном Саркаром 1959 року. Відкидаючи як капіталізм, так і комунізм, вона виступає за економічну демократію, місцево-самодостатні кооперативні зони, світову федерацію та загальні права для людей, тварин і рослин.",
+            "Rembowskism": "лібертарно-марксистська ідеологія, що відкидає реформізм і авангардизм. Натомість вона робить ставку на ради, що перебувають у власності робітників і об’єднуються в горизонтальну конфедерацію. У сфері громадського устрою вона пропонує п’ятирівневу систему рад, що ґрунтується на принципі субсидіарності. Оскільки прихильники цієї ідеології вважають, що генетичні модифікації та технологічне прискорення завдають шкоди довкіллю, вона є виразно біоконсервативною та екологічно орієнтованою. Крім того, у культурному плані вона є більш консервативною, ніж більшість інших ідеологій подібного спрямування.",
 
             /* 10. Centre-Libertarian */
             "Geolibertarianism": "Синтез лібертаріанства та джорджизму. Він стверджує, що індивіди володіють своєю працею, проте земля і природні ресурси є спільною власністю, часто виступаючи за податок на вартість землі для фінансування обмежених функцій уряду.",

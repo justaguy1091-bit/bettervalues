@@ -401,6 +401,14 @@
           "next": "e_social_producer"
         },
         {
+          "en": "Local planning using computers and artificial intelligence to increase efficiency",
+          "uk": "Місцеве планування з використанням комп’ютерів та штучного інтелекту для підвищення ефективності",
+          "ru": "Использование компьютеров и искусственного интеллекта в местном планировании для повышения эффективности",
+          "de": "Lokale Planung unter Einsatz von Computern und künstlicher Intelligenz zur Effizienzsteigerung",
+          "es": "Planificación local mediante el uso de computadoras e inteligencia artificial para aumentar la eficiencia",
+          "next": "cyberunionism"
+        },
+        {
           "en": "Decentralized communes, participatory councils, or the immediate abolition of money",
           "uk": "Децентралізовані комуни, партисипативні ради або негайне скасування грошей",
           "ru": "Децентрализованные коммуны, партисипативные советы или немедленная отмена денег",
@@ -684,6 +692,7 @@
     { "id": "corporatocracy" },
     { "id": "hierarchical_communism" },
     { "id": "cybernetic_socialism" },
+    { "id": "cyberunionism"},
     { "id": "ghent_system" }
   ],
   "resource_management": [

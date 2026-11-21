@@ -50,6 +50,7 @@ const categoryValues = {
         "corporatocracy",
         "hierarchical_communism",
         "cybernetic_socialism",
+        "cyberunionism",
         "ghent_system"
     ],
     resource_management: [
@@ -192,7 +193,7 @@ const subCategories = {
         "welfare": ["social_market", "rhine_capitalism", "paternalistic_capitalism", "social_solidarity_economy", "ordnungspolitik", "residualism", "basic_income_capitalism", "ghent_system"],
         "regulated": ["state_capitalism", "dirigisme", "keynesianism", "third_way", "neo_corporatism", "cameralism", "corporatocracy"],
         "free_cap": ["laissez_faire", "countereconomics"],
-        "socialists": ["state_socialism", "free_socialism", "communization", "utopian_socialism", "syndicalism", "guild_socialism", "parecon", "cybernetic_socialism"],
+        "socialists": ["state_socialism", "free_socialism", "communization", "utopian_socialism", "syndicalism", "guild_socialism", "parecon", "cybernetic_socialism", "cyberunionism"],
         "market_left": ["agrarian_socialism", "mutualism", "market_socialism"],
         "corporatists": ["corporatism", "social_corporatism", "yellow_socialism", "hierarchical_communism"],
         "distributist": ["distributism", "social_distributism", "mutual_distributism", "free_market_distributism", "feudalism"]
@@ -654,7 +655,7 @@ const ideologies = {
     "Revolutionary Nationalism": {
         group: "Third Position",
         color: "#59202cff",
-        economics: ["guild_socialism", "syndicalism", "market_socialism", "agrarian_socialism"],
+        economics: ["guild_socialism", "syndicalism", "cyberunionism", "market_socialism", "agrarian_socialism"],
         resource_management: ["collective_distribution", "Progressive_Taxation", "Confiscatory_Taxation"],
         culture: ["alternative_modernism", "social_progressivism", "progressivism"],
         authority: ["syndicracy", "councilism", "referendum_democracy", "communalism"],
@@ -1019,18 +1020,16 @@ const ideologies = {
         social_control: "disciplinarianism",
         territorial_organization: "hypercentralism"
     },
-    "One-Nation Conservatism": {
+    "Paternalstic Conservatism": {
         group: "Conservative",
         color: "#1a4380",
-        economics: ["paternalistic_capitalism", "social_market", "keynesianism"],
+        economics: "paternalistic_capitalism",
         resource_management: "Progressive_Taxation",
         culture: ["progressive_conservatism", "liberal_conservatism"],
-        authority: "constitutional",
+        authority: ["constitutional", "representative_democracy"],
         nation: ["cultural_nationalism", "civic_nationalism"],
-        foreign: "Realpolitik",
         technology: ["instrumentalism", "industrialism"],
         social_control: "civic_paternalism",
-        territorial_organization: ["regionalism", "centralism"]
     },
     "Conservative Technoliberalism": {
         group: "Conservative",
@@ -1787,7 +1786,7 @@ const ideologies = {
     "Cybernetic Socialism": {
         group: "Socialist",
         color: "#822639ff",
-        economics: "cybernetic_socialism",
+        economics: ["cybernetic_socialism", "cyberunionism"],
         resource_management: ["Progressive_Taxation", "Confiscatory_Taxation"],
         culture: ["social_progressivism", "progressivism"],
         authority: ["digital_democracy", "councilism"],
@@ -1809,7 +1808,7 @@ const ideologies = {
     "Syndicalist Republicanism": {
         group: "Socialist",
         color: "#a82020ff",
-        economics: "syndicalism",
+        economics: ["syndicalism", "cyberunionism"],
         resource_management: ["collective_distribution", "Progressive_Taxation"],
         culture: "social_progressivism",
         authority: ["representative_democracy", "syndicracy"],
@@ -1832,7 +1831,7 @@ const ideologies = {
     "Socialist Technoliberalism": {
         group: "Socialist",
         color: "#bd334b",
-        economics: "market_socialism",
+        economics: ["market_socialism", "cyberunionism"]
         resource_management: ["Progressive_Taxation", "Confiscatory_Taxation"],
         culture: ["progressivism", "civil_liberalism"],
         authority: ["representative_democracy", "digital_democracy"],
@@ -1884,7 +1883,7 @@ const ideologies = {
     "American Technocracy": {
         group: "Socialist",
         color: "#1d4e89",
-        economics: "state_socialism",
+        economics: "cybernetic_socialism",
         resource_management: "collective_distribution",
         culture: "progressivism",
         authority: "technocracy",
@@ -1919,6 +1918,16 @@ const ideologies = {
         technology: "agrarianism",
         social_control: "civic_paternalism",
         territorial_organization: "regionalism"
+    },
+    "Cybersyndicalism": {
+        group: "Socialist",
+        color: "#823948",
+        economics: "cyberunionism",
+        resource_management: "collective_distribution",
+        culture: ["social_progressivism", "progressivism"],
+        authority: "syndicracy",
+        nation: "cosmopolitanism",
+        technology: "prometheanism",
     },
 
     /* ===============================
@@ -2148,7 +2157,7 @@ const ideologies = {
     "Libertarian Socialism": {
         group: "Left-Libertarian",
         color: "#ac3232ff",
-        economics: ["free_socialism", "parecon"],
+        economics: ["free_socialism", "cyberunionism", "parecon"],
         resource_management: "collective_distribution",
         culture: "social_progressivism",
         authority: ["councilism", "communalism"],
@@ -2234,6 +2243,19 @@ const ideologies = {
         technology: "conservationism",
         social_control: "civil_libertarianism",
         territorial_organization: ["confederalism", "municipalism"]
+    },
+    "Rembowskism": {
+        group: "Left-Libertarian",
+        color: "#c91d1a",
+        economics: ["free_socialism", "communization"],
+        resource_management: "collective_distribution",
+        culture: ["conservative_liberalism", "progressive_conservatism", "civil_liberalism"],
+        authority: ["councilism", "communalism"],
+        nation: "communitarianism",
+        foreign: ["internationalism", "alter_globalism"],
+        technology: ["environmentalism", "conservationism", "convivialism"],
+        social_control: ["civil_libertarianism", "reputationalism"],
+        territorial_organization: ["subsidiariy", "confederalism", "municipalism"]
     },
 
     /* ===============================
@@ -2511,12 +2533,11 @@ const ideologies = {
     "Anarcho-Syndicalism": {
         group: "Left-Anarchist",
         color: "#941313",
-        economics: "syndicalism",
+        economics: ["syndicalism", "cyberunionism"],
         resource_management: "collective_distribution",
         culture: "social_progressivism",
         authority: "anarchism",
         foreign: "Internationalism",
-        technology: "industrialism",
         social_control: "civil_libertarianism",
         territorial_organization: "confederalism"
     },
@@ -2717,7 +2738,7 @@ const ideologies = {
     "Anarcho-Transhumanism": {
         group: "Centre-Anarchist",
         color: "#3a6073ff",
-        economics: ["free_socialism", "mutualism", "communization"],
+        economics: ["cyberunionism", "mutualism", "communization"],
         culture: "social_progressivism",
         authority: "anarchism",
         technology: ["transhumanism", "technogaianism"],
@@ -2876,7 +2897,7 @@ const ideologies = {
     "Left-Accelerationism": {
         group: "Accelerationist",
         color: "#c93c3cff",
-        economics: "free_socialism",
+        economics: ["free_socialism", "cyberunionism"],
         resource_management: "collective_distribution",
         culture: "social_progressivism",
         authority: ["digital_democracy", "minarchism"],
@@ -3123,7 +3144,8 @@ const iconSources = {
     "parecon": "https://libcom.org/article/parecon-or-libertarian-communism",
     "corporatocracy": "https://quark88.github.io/ideosorter/",
     "hierarchical_communism": "ai",
-    "cybernetic_socialism": "ai",
+    "cybernetic_socialism": "Created by DaLirker21 on Discord",
+    "cyberunionism": "Created by DaLirker21 on Discord",
     "ghent_system": "ai",
 
     // resource_management
