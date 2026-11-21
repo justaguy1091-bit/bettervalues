@@ -187,7 +187,7 @@ const TRANSLATIONS = {
             "suzerainty": "Suzerainty",
             "anti_organizationalism": "Anti-Organizationalism",
             "cybernetic_socialism": "Cybernetic Socialism",
-            "cyberunionism": "Cyberunionism"
+            "cyberunionism": "Cyberunionism",
             "regressive_taxation": "Regressive Taxation",
             "patchwork": "Patchwork",
             "state_enterprise_revenue": "State Enterprise Revenue",
