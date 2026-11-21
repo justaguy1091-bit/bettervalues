@@ -387,7 +387,7 @@ const TRANSLATIONS = {
             "Gandhian Socialism": "A philosophy developed by Mahatma Gandhi (Sarvodaya) grounded in spiritual metaphysics and village self-reliance. It advocates for worker-cooperative market socialism, direct village democracy (Panchayati Raj), peaceful internationalism, and the preservation of decentralized artisan craft over ecocidal industrial machinery.",
             "Scythianism": "A romantic, anti-modern revolutionary movement in 1917 Russia inspired by Alexander Blok and Andrei Bely. Rejecting Western industrial rationalism, it champions an untamed, Dionysian socialist revival rooted in nomadic steppe vitality, agrarian communalism, and complete spiritual liberation.",
             "Proutism": "Progressive Utilization Theory (PROUT), a progressive libertarian-left philosophy theorized by Prabhat Ranjan Sarkar in 1959. Rejecting both capitalism and communism, it advocates for economic democracy, locally self-sufficient cooperative zones, a world federation, and universal rights for humans, animals, and plants.",
-            "Rembowskism": "A libertarian marxist ideology that rejects reform and vanguardism. Instead opting for worker-owned councils that confederate horizontally. Civically, it advocates for a 5 tier council system with subsidiarity. It believes genetic modification and technological acceleration harms the environment, therefore it is a very bioconservative and environmentalist ideology. It is also more culturally conservative than most other ideologies of its type.",
+            "Rembowskism": "A libertarian marxist ideology that rejects reform and vanguardism. Instead opting for worker-owned councils that confederate horizontally. Civically, it advocates for a 5 tier council system with subsidiarity. It believes genetic modification and technological acceleration harms the environment and is exploitable by the bourgeoisie to further their dominance, therefore it is a very bioconservative and environmentalist ideology. It is also more culturally conservative than most other ideologies of its type.",
 
             /* 10. Centre-Libertarian */
             "Geolibertarianism": "A synthesis of libertarianism and Georgism. It asserts that individuals own their labor, but land and natural resources are common property, often advocating for a land value tax to fund limited government functions.",
@@ -849,7 +849,7 @@ const TRANSLATIONS = {
             "suzerainty": "Сюзеренітет",
             "anti_organizationalism": "Антиорганізаціоналізм",
             "cybernetic_socialism": "Кібернетичний соціалізм",
-            "cyberunionism": "Кіберюніонізм"
+            "cyberunionism": "Кіберюніонізм",
             "regressive_taxation": "Регресивне оподаткування",
             "patchwork": "Печворк",
             "state_enterprise_revenue": "Доходи держпідприємств",

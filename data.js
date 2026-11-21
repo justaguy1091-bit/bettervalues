@@ -1020,7 +1020,7 @@ const ideologies = {
         social_control: "disciplinarianism",
         territorial_organization: "hypercentralism"
     },
-    "Paternalstic Conservatism": {
+    "Paternalistic Conservatism": {
         group: "Conservative",
         color: "#1a4380",
         economics: "paternalistic_capitalism",
@@ -1831,8 +1831,8 @@ const ideologies = {
     "Socialist Technoliberalism": {
         group: "Socialist",
         color: "#bd334b",
-        economics: ["market_socialism", "cyberunionism"]
-        resource_management: ["Progressive_Taxation", "Confiscatory_Taxation"],
+        economics: ["market_socialism", "cyberunionism"],
+        resource_management: ["Confiscatory_Taxation", "Progressive_Taxation"],
         culture: ["progressivism", "civil_liberalism"],
         authority: ["representative_democracy", "digital_democracy"],
         nation: ["Cosmopolitanism", "civic_nationalism"],
@@ -1926,7 +1926,7 @@ const ideologies = {
         resource_management: "collective_distribution",
         culture: ["social_progressivism", "progressivism"],
         authority: "syndicracy",
-        nation: "cosmopolitanism",
+        nation: "Cosmopolitanism",
         technology: "prometheanism",
     },
 
@@ -2252,10 +2252,10 @@ const ideologies = {
         culture: ["conservative_liberalism", "progressive_conservatism", "civil_liberalism"],
         authority: ["councilism", "communalism"],
         nation: "communitarianism",
-        foreign: ["internationalism", "alter_globalism"],
+        foreign: ["Internationalism", "alter_globalism"],
         technology: ["environmentalism", "conservationism", "convivialism"],
         social_control: ["civil_libertarianism", "reputationalism"],
-        territorial_organization: ["subsidiariy", "confederalism", "municipalism"]
+        territorial_organization: ["subsidiarity", "confederalism", "municipalism"]
     },
 
     /* ===============================
@@ -3140,13 +3140,13 @@ const iconSources = {
     "utopian_socialism": "https://www.reddit.com/r/leftistvexillology/comments/1cryitt/possible_flags_for_the_utopian_community_of/",
     "agrarian_socialism": "https://polcompball.wiki/Agrarian_Socialism",
     "feudalism": "https://en.wikipedia.org/wiki/File:Flag_of_medieval_France.png",
-    "cameralism": "ai",
+    "cameralism": "",
     "parecon": "https://libcom.org/article/parecon-or-libertarian-communism",
     "corporatocracy": "https://quark88.github.io/ideosorter/",
-    "hierarchical_communism": "ai",
+    "hierarchical_communism": "Created by DaLirker21 on Discord",
     "cybernetic_socialism": "Created by DaLirker21 on Discord",
     "cyberunionism": "Created by DaLirker21 on Discord",
-    "ghent_system": "ai",
+    "ghent_system": "Created by DaLirker21 on Discord",
 
     // resource_management
     "Voluntaryism": "https://en.wikipedia.org/wiki/File:VforVoluntary_normal.svg",
@@ -3154,12 +3154,12 @@ const iconSources = {
     "flat_taxation": "",
     "Progressive_Taxation": "",
     "Confiscatory_Taxation": "",
-    "collective_distribution": "ai",
+    "collective_distribution": "https://commons.wikimedia.org/wiki/File:Hammer_%26_Sickle.svg",
     "mixed_lvt": "https://www.redbubble.com/i/poster/Georgist-Symbol-by-selfreference2/122142872/flk2",
     "tariff_funding": "https://wiki.polcompball.co.uk/Protectionism",
     "fair_tax": "https://www.moran.senate.gov/public/index.cfm/fairtax",
     "regressive_taxation": "",
-    "state_enterprise_revenue": "ai",
+    "state_enterprise_revenue": "",
 
     // culture
     "postmodernism": "https://commons.wikimedia.org/wiki/File:Chaos_star.svg",
@@ -3169,10 +3169,10 @@ const iconSources = {
     "conservative_liberalism": "https://polcompball.wiki/Conservative_Liberalism",
     "liberal_conservatism": "https://polcompball.wiki/Liberal_Conservatism",
     "progressive_conservatism": "https://polcompball.wiki/Progressive_Conservatism",
-    "conservatism": "ai",
+    "conservatism": "https://1000logos.net/conservative-party-logo/",
     "traditionalist_conservatism": "https://wiki.polcompball.co.uk/File:Trad_flag.svg",
     "reactionaryism": "https://polcompball.wiki/Reactionaryism",
-    "paleoconservatism": "ai",
+    "paleoconservatism": "",
     "neoreactionaryism": "https://polcompball.wiki/Neoreactionaryism",
     "religious_traditionalism": "https://commons.wikimedia.org/wiki/File:Traditionalist_Catholicism_Symbol.jpg",
     "perennial_traditionalism": "",
@@ -3190,30 +3190,30 @@ const iconSources = {
     "partocracy": "https://commons.wikimedia.org/wiki/File:Lenin-Silhoutte_.svg",
     "representative_democracy": "",
     "referendum_democracy": "",
-    "councilism": "",
+    "councilism": "https://wiki.polcompball.co.uk/File:Councom_flag.svg",
     "communalism": "https://historica.fandom.com/wiki/Collectivism",
     "digital_democracy": "https://digitaldemocracy.world/digital-democracy/",
     "constitutional": "",
     "minarchism": "https://commons.wikimedia.org/wiki/File:Minarchist_Flag.jpg",
     "meritocracy": "https://commons.wikimedia.org/wiki/File:Meritocracy_symbol.jpg",
     "technocracy": "https://commons.wikimedia.org/wiki/File:TechnocracyMonad.svg",
-    "stratocracy": "ai",
-    "aristocracy": "ai",
+    "stratocracy": "https://wiki.polcompball.co.uk/File:Stratocracy_flag.svg",
+    "aristocracy": "",
     "anarcho_monarchism": "https://www.reddit.com/r/vexillology/comments/aqt0of/flag_of_anarchomonarchy/",
     "neocameralism": "",
     "syndicracy": "https://kaiserreich.wiki/Syndicalist_Workers_League",
     "demarchy": "https://www.sortitionfoundation.org/lab",
-    "polycentrism": "ai",
+    "polycentrism": "Created by DaLirker21 on Discord",
     "oligarchy": "https://wiki.polcompball.co.uk/Oligarchy",
-    "semi_constitutional": "ai",
-    "ochlocracy": "ai",
+    "semi_constitutional": "Created by Xcinosek on Discord",
+    "ochlocracy": "Created by DaLirker21 on Discord",
 
     // nation
     "Cosmopolitanism": "https://commons.wikimedia.org/wiki/File:International_Flag_of_Planet_Earth.svg",
     "civic_nationalism": "https://polcompball.wiki/Civic_Nationalism",
     "cultural_nationalism": "https://polcompball.wiki/Cultural_Nationalism",
     "ethnic_nationalism": "https://polcompball.wiki/Ethnonationalism",
-    "pan_nationalism": "https://polcompball.wiki/Irredentism",
+    "pan_nationalism": "https://wiki.polcompball.co.uk/File:Pannat_flag.svg",
     "racial_nationalism": "https://polcompball.wiki/Racial_Nationalism",
     "Tribalism": "https://polcompball.wiki/Tribalism",
     "egoism": "",
@@ -3235,7 +3235,7 @@ const iconSources = {
     "alter_globalism": "https://www.reddit.com/r/vexillology/comments/1g7z6gu/the_liberanarchist_flag_a_flag_for_a_fictional/",
     "pacifism": "https://www.fotw.info/flags/de%7Ddove.html",
     "mercantilism": "https://www.pinterest.com/pin/725149977497576069/",
-    "irredentism": "ai",
+    "irredentism": "https://wiki.polcompball.co.uk/File:Irredentism_flag.svg",
 
     // technology
     "primitivism": "",
@@ -3260,13 +3260,13 @@ const iconSources = {
     "civil_libertarianism": "https://wiki.polcompball.co.uk/File:Civilbert_flag.svg",
     "permissivism": "",
     "civic_paternalism": "https://wiki.polcompball.co.uk/Paternalism",
-    "legal_moralism": "ai",
+    "legal_moralism": "",
     "securitism": "",
     "disciplinarianism": "",
     "regimentalism": "",
     "totalism": "",
-    "retributivism": "ai",
-    "reputationalism": "ai",
+    "retributivism": "Created by DaLirker21 on Discord",
+    "reputationalism": "https://www.friendshipcircle.ca",
 
     // territorial_organization
     "municipalism": "https://www.reddit.com/r/vexillology/comments/4o8mfw/flag_for_the_communalistlibertarian_municipalist/",
@@ -3275,8 +3275,8 @@ const iconSources = {
     "regionalism": "",
     "centralism": "",
     "hypercentralism": "https://www.reddit.com/r/vexillology/comments/1h5uzl8/created_flags_for_my_fictional_totalitarian/",
-    "subsidiarity": "ai",
-    "suzerainty": "ai",
+    "subsidiarity": "",
+    "suzerainty": "Created by DaLirker21 on Discord",
     "anti_organizationalism": "https://www.britannica.com/topic/anarchism",
-    "patchwork": "ai"
+    "patchwork": "https://wiki.polcompball.co.uk/File:Skdfkskdfk.png"
 };
