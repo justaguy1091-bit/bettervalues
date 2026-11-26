@@ -227,6 +227,14 @@
           "de": "Arbeitslosenversicherung und Sozialleistungen an Gewerkschaften statt an staatliche Bürokratien delegieren",
           "es": "Delegar el seguro de desempleo y la administración del bienestar en los sindicatos en lugar de las burocracias estatales",
           "next": "ghent_system"
+        },
+        {
+          "en": "Provide a national dividend to all consumers in order to close the price-income gap, and reduce needless goods (waste) that increase the gap",
+          "uk": "Надайте національний дивіденд усім споживачам, щоб скоротити розрив між цінами та доходами, а також зменшити кількість непотрібних товарів (відходів), які цей розрив збільшують",
+          "ru": "Предоставить национальный дивиденд всем потребителям, чтобы сократить разрыв между ценами и доходами, а также уменьшить количество ненужных товаров (отходов), которые этот разрыв увеличивают",
+          "de": "Gewähren Sie allen Verbrauchern eine nationale Dividende, um die Lücke zwischen Preisen und Einkommen zu schließen und das Aufkommen an unnötigen Gütern (Abfall) – das diese Lücke vergrößert – zu verringern",
+          "es": "Proporcionar un dividendo nacional a todos los consumidores con el fin de cerrar la brecha entre precios e ingresos, y reducir los bienes innecesarios (desperdicios) que amplían dicha brecha",
+          "next": "social_credit"
         }
       ]
     },
@@ -537,7 +545,7 @@
           "next": "e_distrib_left"
         },
         {
-          "en": "Through family businesses, local autonomy, and free private contracts",
+          "en": "Through family businesses, local autonomy, economic sovereignty, and free private contracts",
           "uk": "Через сімейний бізнес, місцеву автономію та вільні приватні договори",
           "ru": "Через семейный бизнес, местное самоуправление и свободные частные договоры",
           "de": "Durch Familienunternehmen, lokale Autonomie und freie Privatverträge",
@@ -603,6 +611,14 @@
           "de": "Alle staatlichen Privilegien abschaffen, damit Kleinbetriebe Monopole im freien Markt natürlich übertreffen",
           "es": "Eliminar todos los privilegios estatales para que las pequeñas empresas superen naturalmente a los monopolios en un mercado libre",
           "next": "free_market_distributism"
+        },
+        {
+          "en": "Place tariffs and limit foreign imports to protect local family business from global corporations",
+          "uk": "Запроваджуйте тарифи та обмежуйте іноземний імпорт, щоб захистити місцевий сімейний бізнес від глобальних корпорацій",
+          "ru": "Ввести таможенные пошлины и ограничить иностранный импорт, чтобы защитить местный семейный бизнес от глобальных корпораций",
+          "de": "Zölle erheben und ausländische Importe begrenzen, um lokale Familienunternehmen vor globalen Konzernen zu schützen",
+          "es": "Establecer aranceles y limitar las importaciones extranjeras para proteger a las empresas familiares locales frente a las corporaciones globales",
+          "next": "national_distributism"
         }
       ]
     },
@@ -693,7 +709,9 @@
     { "id": "hierarchical_communism" },
     { "id": "cybernetic_socialism" },
     { "id": "cyberunionism"},
-    { "id": "ghent_system" }
+    { "id": "ghent_system" },
+    { "id": "national_distributism" },
+    { "id": "social_credit" }
   ],
   "resource_management": [
     {
@@ -705,12 +723,12 @@
       "es": "¿Cómo deberían financiarse los servicios públicos y distribuirse la riqueza común?",
       "options": [
         {
-          "en": "Tax personal incomes, corporate profits, and capital",
-          "uk": "Оподатковувати особисті доходи, прибутки корпорацій і капітал",
-          "ru": "Облагать налогами личные доходы, прибыль компаний и капитал",
-          "de": "Persönliche Einkommen, Unternehmensgewinne und Kapital besteuern",
-          "es": "Gravar los ingresos personales, los beneficios corporativos y el capital",
-          "next": "r_production"
+          "en": "Tax personal incomes, corporate profits, bodily substances, and capital",
+          "uk": "Оподатковуйте особисті доходи, прибутки корпорацій, матеріальні об'єкти та капітал",
+          "ru": "Облагать налогами личные доходы, корпоративную прибыль, материальные блага и капитал",
+          "de": "Besteuerung von persönlichen Einkommen, Unternehmensgewinnen, körperlichen Substanzen und Kapital",
+          "es": "Gravar los ingresos personales, los beneficios empresariales, las sustancias corporales y el capital",
+          "next": "r_material"
         },
         {
           "en": "Tax the value of unimproved land and natural resources",
@@ -743,6 +761,32 @@
           "de": "Öffentliche Dienste ausschließlich durch freiwillige Spenden und Nutzungsgebühren finanzieren",
           "es": "Financiar los servicios públicos estrictamente mediante donaciones voluntarias y tarifas por uso",
           "next": "Voluntaryism"
+        }
+      ]
+    },
+    {
+      "id": "r_material",
+      "en": "What should be taxed?",
+      "uk": "Що має оподатковуватися?",
+      "ru": "Что следует облагать налогом?",
+      "de": "Was sollte besteuert werden?",
+      "es": "¿Qué debería estar sujeto a impuestos?",
+      "options": [
+        {
+          "en": "A Person's monetary income to fund government programs, projects, and other stuff",
+          "uk": "Грошовий дохід особи, що спрямовується на фінансування державних програм, проєктів та інших потреб",
+          "ru": "Денежный доход человека, направляемый на финансирование государственных программ, проектов и прочих нужд",
+          "de": "Das monetäre Einkommen einer Person zur Finanzierung staatlicher Programme, Projekte und anderer Dinge",
+          "es": "Los ingresos monetarios de una persona destinados a financiar programas gubernamentales, proyectos y otros asuntos",
+          "next": "r_production"
+        },
+        {
+          "en": "Human waste, it is good for fertilizer to increase crop production and let less people starve to death",
+          "uk": "Людські відходи можна використовувати як добриво для підвищення врожайності, щоб менше людей помирало від голоду",
+          "ru": "Человеческие отходы можно использовать в качестве удобрения для повышения урожайности сельскохозяйственных культур, что позволит уменьшить число людей, умирающих от голода",
+          "de": "Menschliche Fäkalien eignen sich gut als Dünger, um die Ernteerträge zu steigern und zu verhindern, dass Menschen verhungern",
+          "es": "Los desechos humanos sirven como fertilizante para aumentar la producción agrícola y reducir el número de personas que mueren de hambre",
+          "next": "circulus"
         }
       ]
     },
@@ -876,7 +920,8 @@
     { "id": "Confiscatory_Taxation" },
     { "id": "collective_distribution" },
     { "id": "regressive_taxation" },
-    { "id": "state_enterprise_revenue" }
+    { "id": "state_enterprise_revenue" },
+    { "id": "circulus" }
   ],
   "culture": [
     {
@@ -1308,11 +1353,11 @@
       "es": "¿Cómo deberían ejercer su poder político los ciudadanos?",
       "options": [
         {
-          "en": "By electing representatives to pass laws in a parliament",
-          "uk": "Обираючи представників для ухвалення законів у парламенті",
-          "ru": "Избирая представителей для принятия законов в парламенте",
-          "de": "Durch die Wahl von Abgeordneten, die in einem Parlament Gesetze verabschieden",
-          "es": "Eligiendo representantes para aprobar leyes en un parlamento",
+          "en": "By electing either representatives to pass laws in a parliamentary body or an executive president directly",
+          "uk": "Шляхом обрання або представників для ухвалення законів у парламентському органі, або безпосередньо президента, який очолює виконавчу владу",
+          "ru": "Путем избрания либо представителей для принятия законов в парламентском органе, либо — напрямую — президента, наделенного исполнительной властью",
+          "de": "Indem entweder Vertreter gewählt werden, die in einem parlamentarischen Gremium Gesetze verabschieden, oder ein Präsident mit Exekutivbefugnissen direkt gewählt wird",
+          "es": "Ya sea eligiendo representantes para aprobar leyes en un órgano parlamentario, o eligiendo directamente a un presidente con funciones ejecutivas",
           "next": "a_parliamentary"
         },
         {
@@ -1339,7 +1384,7 @@
           "ru": "Избранные представители управляют страной в рамках конституционной республики",
           "de": "Gewählte Amtsträger regieren innerhalb einer konstitutionellen Republik",
           "es": "Funcionarios electos gobiernan dentro de una república constitucional",
-          "next": "representative_democracy"
+          "next": "a_republican"
         },
         {
           "en": "An elected parliament shares power with a monarch bound by a constitution",
@@ -1382,6 +1427,40 @@
           "de": "Der Monarch behält echte Exekutiv-, Ernennungs- oder Vetorechte neben dem gewählten Parlament",
           "es": "El monarca conserva poderes ejecutivos, de nombramiento o de veto reales junto con el parlamento electo",
           "next": "semi_constitutional"
+        }
+      ]
+    },
+    {
+      "id": "a_republican",
+      "en": "How should executive power be distributed?",
+      "uk": "Як має бути розподілена виконавча влада?",
+      "ru": "Как должна быть распределена исполнительная власть?",
+      "de": "Wie sollte die Exekutivgewalt verteilt werden?",
+      "es": "¿Cómo debería distribuirse el poder ejecutivo?",
+      "options": [
+        {
+          "en": "The parliament should hold executive power with the head of state being ceremonial",
+          "uk": "Парламент повинен здійснювати виконавчу владу, тоді як глава держави виконує лише церемоніальну функцію",
+          "ru": "Парламент должен обладать исполнительной властью, а глава государства — выполнять лишь церемониальные функции",
+          "de": "Das Parlament sollte die Exekutivgewalt innehaben, während das Staatsoberhaupt eine rein zeremonielle Rolle einnimmt",
+          "es": "El parlamento debería ostentar el poder ejecutivo, mientras que el jefe de Estado tendría un papel ceremonial",
+          "next": "parliamentary_democracy"
+        },
+        {
+          "en": "An executive president should hold power alongside a separate head of government",
+          "uk": "Президент із виконавчими повноваженнями має здійснювати владу поряд із окремим главою уряду",
+          "ru": "Президент, наделенный исполнительной властью, должен осуществлять свои полномочия наряду с отдельным главой правительства",
+          "de": "Ein exekutiver Präsident sollte die Macht neben einem eigenständigen Regierungschef ausüben",
+          "es": "Un presidente ejecutivo debería ostentar el poder junto a un jefe de gobierno independiente",
+          "next": "semi_presidential_democracy"
+        },
+        {
+          "en": "The president holds complete executive power, and serves as both the head of state and the head of government",
+          "uk": "Президент володіє повною виконавчою владою і виконує функції як глави держави, так і глави уряду",
+          "ru": "Президент обладает всей полнотой исполнительной власти и является одновременно главой государства и главой правительства",
+          "de": "Der Präsident besitzt die vollständige Exekutivgewalt und fungiert sowohl als Staatsoberhaupt als auch als Regierungschef",
+          "es": "El presidente ostenta la totalidad del poder ejecutivo y ejerce tanto de jefe de Estado como de jefe de Gobierno",
+          "next": "presidential_democracy"
         }
       ]
     },
@@ -1490,6 +1569,14 @@
           "de": "Konzentrierter Reichtum, Unternehmenseigentum und verankerter wirtschaftlicher Einfluss",
           "es": "Riqueza concentrada, propiedad corporativa e influencia económica arraigada",
           "next": "oligarchy"
+        },
+        {
+          "en": "Philosophical wisdom, moral virtue, and contemplative devotion to truth",
+          "uk": "Філософська мудрість, моральна чеснота та споглядальна відданість істині",
+          "ru": "Философская мудрость, нравственная добродетель и созерцательная преданность истине",
+          "de": "Philosophische Weisheit, moralische Tugend und kontemplative Hingabe an die Wahrheit",
+          "es": "Sabiduría filosófica, virtud moral y devoción contemplativa a la verdad",
+          "next": "noocracy"
         }
       ]
     },
@@ -1524,6 +1611,14 @@
           "de": "Eine Aktiengesellschaft, geführt von einem ernannten Geschäftsführer und Verwaltungsrat",
           "es": "Una sociedad anónima dirigida por un director ejecutivo designado y un consejo de administración",
           "next": "neocameralism"
+        },
+        {
+          "en": "Physical strength and battle prowess proven in physical combat",
+          "uk": "Фізична сила та бойова майстерність, підтверджені у фізичному бою",
+          "ru": "Физическая сила и боевое мастерство, проявленные в рукопашном бою",
+          "de": "Körperliche Stärke und im physischen Kampf unter Beweis gestelltes Kampfgeschick",
+          "es": "Fuerza física y destreza en el combate, demostradas en la lucha cuerpo a cuerpo",
+          "next": "kratocracy"
         }
       ]
     },
@@ -1606,7 +1701,9 @@
     { "id": "partocracy" },
     { "id": "meritocracy" },
     { "id": "technocracy" },
-    { "id": "representative_democracy" },
+    { "id": "parliamentary_democracy" },
+    { "id": "semi_presidential_democracy" },
+    { "id": "presidential_democracy" },
     { "id": "referendum_democracy" },
     { "id": "councilism" },
     { "id": "communalism" },
@@ -1620,7 +1717,9 @@
     { "id": "polycentrism" },
     { "id": "oligarchy" },
     { "id": "semi_constitutional" },
-    { "id": "ochlocracy" }
+    { "id": "ochlocracy" },
+    { "id": "kratocracy" },
+    { "id": "noocracy" }
   ],
   "nation": [
     {
@@ -2027,6 +2126,14 @@
           "de": "Politisch oder militärisch im Ausland eingreifen, um Aggression zu stoppen und Menschenrechte zu schützen",
           "es": "Intervenir en el extranjero política o militarmente para detener la agresión y proteger los derechos humanos",
           "next": "Interventionism"
+        },
+        {
+          "en": "Take advantage of the cultural power of the nation to export our culture abroad destroying their local culture and making our corporations richer",
+          "uk": "Використовуйте культурну міць нації для експорту нашої культури за кордон, руйнуючи тамтешню місцеву культуру й примножуючи статки наших корпорацій",
+          "ru": "Используйте культурную мощь нации для экспорта нашей культуры за рубеж — уничтожая при этом местную культуру и приумножая богатство наших корпораций",
+          "de": "Nutzen Sie die kulturelle Macht der Nation, um unsere Kultur ins Ausland zu exportieren, deren lokale Kultur zu zerstören und unsere Konzerne reicher zu machen",
+          "es": "Aprovecha el poder cultural de la nación para exportar nuestra cultura al extranjero, destruyendo la cultura local de otros lugares y enriqueciendo a nuestras corporaciones",
+          "next": "neo_colonialism"
         }
       ]
     },
@@ -2067,7 +2174,8 @@
     { "id": "alter_globalism" },
     { "id": "irredentism" },
     { "id": "pacifism" },
-    { "id": "mercantilism" }
+    { "id": "mercantilism" },
+    { "id": "neo_colonialism" }
   ],
   "technology": [
     {

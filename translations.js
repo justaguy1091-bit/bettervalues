@@ -17,7 +17,6 @@ const TRANSLATIONS = {
             nextClosestMatch: "Next closest match",
             iconSource: "Original icon source",
             sourceNotProvided: "Icon source not provided",
-            aiGenerated: "AI generated",
             allValuesTitle: "All Values",
             allValuesIntro: "Below is a collection of all values included in BetterValues. Click on any icon to view its detailed description and original source.",
             allIdeologiesTitle: "All Ideologies",
@@ -81,6 +80,7 @@ const TRANSLATIONS = {
             "Progressive_Taxation": "Progressive Taxation",
             "Confiscatory_Taxation": "Confiscatory Taxation",
             "collective_distribution": "Collective Distribution",
+            "circulus": "Circulus Theory",
             "postmodernism": "Postmodernism",
             "civil_liberalism": "Civil Liberalism",
             "progressivism": "Progressivism",
@@ -104,7 +104,9 @@ const TRANSLATIONS = {
             "autocracy": "Autocracy",
             "anarchism": "Anarchism",
             "partocracy": "Partocracy",
-            "representative_democracy": "Representative Democracy",
+            "parliamentary_democracy": "Parliamentary Democracy",
+            "semi_presidential_democracy": "Semi-Presidential Democracy",
+            "presidential_democracy": "Presidential Democracy",
             "referendum_democracy": "Referendum Democracy",
             "councilism": "Councilism",
             "communalism": "Communalism",
@@ -194,7 +196,12 @@ const TRANSLATIONS = {
             "oligarchy": "Oligarchy",
             "ghent_system": "Ghent System",
             "semi_constitutional": "Semi-Constitutional Monarchy",
-            "ochlocracy": "Ochlocracy"
+            "ochlocracy": "Ochlocracy",
+            "national_distributism": "National Distributism",
+            "social_credit": "Social Credit",
+            "kratocracy": "Kratocracy",
+            "noocracy": "Noocracy",
+            "neo_colonialism": "Neo-Colonialism"
         },
         descriptions: {
             /* 1. Third Position */
@@ -232,7 +239,9 @@ const TRANSLATIONS = {
             "Nazi-Maoism": "A syncretic extremist ideology emerging in 1960s Italy (associated with Lotta di Popolo and Franco Freda). It fuses Hitlerite biological racism and anti-bourgeois fanaticism with Maoist guerrilla tactics, agrarian socialism, and solidarity with Third World anti-imperialist insurgencies.",
             "Savinkovism": "The Russian National-Populist doctrine from 'Kaiserreich', centered on Boris Savinkov (the 'Vozhd'). It combines a revanchist, imperialist foreign policy and romantic national rebirth with a state-directed corporatist economy and the total militarization of society into patriotic combat detachments.",
             "Mosleyism": "The British fascist philosophy established by Sir Oswald Mosley and the British Union of Fascists (BUF). It advocates replacing party-driven parliamentary politics with an occupational corporatist directorate, pairing state-led industrialization with imperial autarky and the post-war vision of a unified, self-sufficient 'Europe a Nation'.",
-            "Revolutionary Nationalism": "A radical, anti-imperialist Third Position current that fuses national liberation and pan-national solidarity with anti-capitalist, worker-controlled socialism. Rejecting both corporate globalization and rigid bureaucratic centralism, it favors decentralized syndicates, worker guilds, participatory self-rule, and social transformation toward an alternative, non-bourgeois modernity.",
+            "Monarcho-Syndicalism": "A variant of national syndicalism that advocates for the rule of a monarch, with trade unions controlling the economy.",
+            "Chilean National Socialism": "The fascist and corporatist doctrine of Chile's National Socialist Movement (Nacismo), led by Jorge González von Marées and Carlos Keller. Rejecting Hitlerite biological racism in favor of a Creolized national identity and anti-imperialist isolationism, it advocates for an authoritarian ethical state, class-collaborative social corporatism, rapid national industrialization, and the paramilitary regimentation of civic life.",
+            "Combinationism": "A syncretic, non-dualist political philosophy centered on the simultaneous and complete prioritization of 'Organic Individualism' and 'Organic Statism.' Rejecting both atomized liberalism and totalizing collectivism, it holds that the organic individual and the organic state are neither united nor separated, reconciling personal liberty and ecological modernization with national romanticism and ethical statecraft.",
 
             /* 2. Reactionary */
             "Volkism": "Volkism is a German ethnic-nationalist movement emphasizing \"blood and soil.\" It idealizes a mystical, organic union of a racially pure people (the Volk) rooted in their ancestral land and traditional folklore.",
@@ -252,7 +261,7 @@ const TRANSLATIONS = {
             "Mladorossism": "A syncretic 1930s Russian monarcho-socialist movement founded by Alexander Kazembek under the slogan 'The Tsar and the Soviets'. It seeks to reconcile hereditary imperial monarchy as the spiritual head of state with the Soviet council system, public industrial planning, and social guarantees for the working class.",
             "National Social Capitalism": "A nationalist and welfarist fusion of National Capitalism and Social Capitalism. It pairs a center-left to right-wing social market economy with right-wing cultural nationalism and welfare chauvinism.",
             "Right-State Liberalism": "An authoritarian, economically far-right, and ultranationalist analog to State Liberalism. It posits that progressive values—such as secularism, feminism, civil liberties, and eugenics—are exclusively Western civilizational traits, combining them with racial nationalism and imperialism.",
-            "Monarquia Syndicalista": "The Portuguese National Syndicalist movement founded by Francisco Rolão Preto (the Blue Shirts). Strongly opposed to both laissez-faire capitalism and Salazar's Estado Novo, it advocates for an anti-bourgeois social monarchy where partisan politics are replaced by worker-run trade syndicates, Catholic social personalism, and municipal charters under a traditional King.",
+            "Portuguese Monarcho-Syndicalism": "The Portuguese National Syndicalist movement founded by Francisco Rolão Preto (the Blue Shirts). Strongly opposed to both laissez-faire capitalism and Salazar's Estado Novo, it advocates for an anti-bourgeois social monarchy where partisan politics are replaced by worker-run trade syndicates, Catholic social personalism, and municipal charters under a traditional King.",
             "Serenissimism": "The classical patrician republicanism of the Most Serene Republic of Venice (La Serenissima). Rooted in the hereditary nobility of the Great Council (the Serrata) and a Doge strictly bound by oath as first among equals, it preserves civic stability through sumptuary laws, guild regulation, state-organized merchant convoys and shipyards (the Arsenal), customs duties in place of direct taxation, pragmatic diplomacy, and maritime dominion over the Stato da Màr.",
 
             /* 3. Conservative */
@@ -314,6 +323,7 @@ const TRANSLATIONS = {
             "Social-Helveticism": "A social-democratic model adapted to the Swiss institutional framework. It harnesses direct democracy, popular initiatives, and cantonal federalism to expand universal welfare, progressive taxation, worker protections, and robust public services within a framework of armed neutrality and civic solidarity.",
             "Left Kemalism": "A left-wing and social-democratic evolution of Kemalism (synthesizing Kadroism and Ecevit's 'Ortanın Solu'). It merges secular republicanism and civic patriotism with robust welfare redistribution, mixed-market or state-guided economics, and labor empowerment.",
             "Longism": "The left-wing populist movement created by Louisiana Governor and US Senator Huey Long ('The Kingfish'). Operating under the motto 'Every Man a King,' it proposed the radical 'Share Our Wealth' program: placing confiscatory caps on massive fortunes to guarantee homestead allowances, pensions, free education, and vast public works within a constitutional framework.",
+            "Czechoslovak National Socialism": "A reformist, non-Marxist socialist movement founded in 1897 Bohemia and prominent in the First Czechoslovak Republic, associated with Václav Klofáč, Edvard Beneš, and Milada Horáková. Unrelated to German Nazism, it rejected both Habsburg imperialism and Marxist class struggle, advocating for national emancipation, Hussite republican traditions, and gradual social reforms within a parliamentary democracy.",
 
             /* 6. Liberal */
             "Classical Liberalism": "The foundational ideology of individual liberty, private property, and free markets. It advocates for a limited \"night-watchman state,\" the rule of law, and civil liberties, viewing government intervention as a threat to freedom.",
@@ -355,6 +365,9 @@ const TRANSLATIONS = {
             "Fabian Socialism": "A British reformist socialist school founded in 1884 that rejects violent revolution in favor of gradual parliamentary permeation. It advocates for the incremental public ownership of key utilities, progressive taxation, an educated technocratic civil service, and municipal socialism ('Gas and Water Socialism').",
             "Ujamaa": "A distinct form of African socialism theorized by Tanzania's first president, Julius Nyerere, in the 1967 Arusha Declaration. Meaning 'Familyhood' in Swahili, it rejects both capitalism and Marxist class war, centering society on collective rural farming villages (Vijiji vya Ujamaa), moral self-reliance, and non-aligned Pan-African solidarity.",
             "Cybersyndicalism": "A form of syndicalism that is like regular syndicalism, but with cybernetic planning to help coordinate the workplace. It is more tech-optimistic than regular syndicalism as it favors slight automation over pure human craft.",
+            "Lerouxism": "A utopian socialist ideology that advocates for the state collecting feces to be used as fertilizer. This fertilizer will help agricultural production go up and solve malthusian crises.",
+            "Veblenism": "An authoritarian technocratic and socialist ideology inspired by economist Thorstein Veblen's concept of a 'Soviet of Technicians.' It advocates for replacing absentee ownership and the capitalist price system with state-integrated industrial guilds managed by engineers, scientists, and technical experts, funding a centralized, totalist state directly through state enterprise revenues to maximize industrial efficiency.",
+            "Owenism": "A variant of utopian socialism that believes in creating Socialism by renting a plentiful area of land to establish said ″socialist utopia″ where everyone can redistribute the means of production in peace through class collabration, including the bourgeoisie who would willingly give up their wealth to live in the utopia.",
 
             /* 8. Marxist */
             "Italian Left Communism": "A variant that rejects parliamentarianism and trade unions, emphasizing a pure Marxist party. It critiques the USSR as state capitalist and advocates for a global, uncompromising proletarian revolution.",
@@ -374,6 +387,8 @@ const TRANSLATIONS = {
             "Cyber-Communism": "A communist vision that relies on supercomputing, artificial intelligence, and cybernetic networks to distribute goods according to human need without money or classes.",
             "De Leonism": "A Marxist-industrial framework combining political party action with revolutionary industrial unionism to directly capture and operate the means of production.",
             "National Communism": "A synthesis of Marxist-Leninist state socialism and national sovereignty. It advocates for a one-party vanguard state, centrally planned distribution, and secular social progressivism while adapting socialist construction to the distinct cultural heritage, sovereignty, and pragmatic geopolitical interests of the nation.",
+            "Barracks Communism": "A crude, ascetic variant of state socialism originally critiqued by Karl Marx in reference to Sergey Nechayev's revolutionary conspiracism. It organizes the entire population like a military garrison, enforcing universal material austerity, low-tech communal labor, and isolationist autarky while abolishing personal privacy, family autonomy, and traditional morality under totalist party-technocratic control.",
+            "Ho Chi Minh Thought": "A revolutionary communist ideology combining Marxism-Leninism with Vietnamese nationalism, anti-imperialism, and patriotism. It advocates national independence, socialist development, workers' and peasants' unity, and a strong, disciplined revolutionary state, emphasizing self-reliance, collective solidarity, and social equality.",
             
             /* 9. Left-Libertarian */
             "Communalism": "Proposed by Murray Bookchin, it seeks to replace the state with a network of directly democratic, local popular assemblies. It integrates ecological concerns with a post-scarcity vision of self-governing, confederated urban and rural communities.",
@@ -388,6 +403,8 @@ const TRANSLATIONS = {
             "Scythianism": "A romantic, anti-modern revolutionary movement in 1917 Russia inspired by Alexander Blok and Andrei Bely. Rejecting Western industrial rationalism, it champions an untamed, Dionysian socialist revival rooted in nomadic steppe vitality, agrarian communalism, and complete spiritual liberation.",
             "Proutism": "Progressive Utilization Theory (PROUT), a progressive libertarian-left philosophy theorized by Prabhat Ranjan Sarkar in 1959. Rejecting both capitalism and communism, it advocates for economic democracy, locally self-sufficient cooperative zones, a world federation, and universal rights for humans, animals, and plants.",
             "Rembowskism": "A libertarian marxist ideology that rejects reform and vanguardism. Instead opting for worker-owned councils that confederate horizontally. Civically, it advocates for a 5 tier council system with subsidiarity. It believes genetic modification and technological acceleration harms the environment and is exploitable by the bourgeoisie to further their dominance, therefore it is a very bioconservative and environmentalist ideology. It is also more culturally conservative than most other ideologies of its type.",
+            "Fully Automated Luxury Gay Space Communism": "A post-scarcity, libertarian-left internet ideology popularized by Aaron Bastani's concept of 'Fully Automated Luxury Communism.' It envisions an egalitarian, stateless society where full cybernetic automation, space colonization, and abundant clean energy abolish wage labor and material scarcity, liberating humanity to pursue communal self-governance, queer liberation, radical personal autonomy, and leisure.",
+            "Neozapatism": "A libertarian-left movement originating from the Chiapas conflict and deriving itself from the revolutionary teachings of Emiliano Zapata. It combines indigenous autonomy, direct democracy through popular assemblies and caracoles, cooperative agrarian subsistence, and a refusal to seize state power, operating under the principle of 'leading by obeying' (mandar obedeciendo).",
 
             /* 10. Centre-Libertarian */
             "Geolibertarianism": "A synthesis of libertarianism and Georgism. It asserts that individuals own their labor, but land and natural resources are common property, often advocating for a land value tax to fund limited government functions.",
@@ -470,6 +487,7 @@ const TRANSLATIONS = {
             "Soylentism": "A grim neo-Malthusian survival regime inspired by Soylent Green and Make Room! Make Room!. Facing catastrophic overpopulation, ecological ruin, and food depletion, an authoritarian state-industrial monopoly manages the populace through strict rationing, curfews, and involuntary recycling of human biomass.",
             "Burgundian System": "An ultra-totalitarian dystopian regime from the alternate-history mod 'The New Order: Last Days of Europe', led by Heinrich Himmler's SS-State of Burgundy. Rejecting standard fascism as soft, it organizes the entire population into a concentration-camp slave-labor economy to purge all human and racial impurity in preparation for purifying nuclear war.",
             "Russian Imperial Cult": "An eschatological dystopian nightmare from 'The New Order: Last Days of Europe', embodied by Sergey Taboritsky's Holy Russian Empire. Driven by the fanatical delusion that the murdered Tsarevich Alexei lives, an absolute theocratic regency uses chemical nerve gas and terror to violently cleanse the nation until the clock strikes midnight.",
+            "Neo-Crapitalism": "An Ultra-Globalistic Capitalist dystopian philosophy that believes the state should not tax money, but rather poop. The poop will be sold to poorer countries for a highly inflated price to increase profit. This profit will be gifted to the richest citizens and large megacorporations.",
 
             /* Economics Values */
             "social_market": "An economic framework that balances private enterprise and free market competition with constitutional guarantees of social equity, mandatory universal solidarity insurance, and strict anti-trust oversight.",
@@ -510,6 +528,8 @@ const TRANSLATIONS = {
             "cybernetic_socialism": "A planned socialist model in which production and distribution are centrally coordinated through computer networks, algorithmic optimization, and real-time data feedback rather than market prices or rigid bureaucracy.",
             "cyberunionism": "A decentralized version of cybernetic socialism. It believes the workers should directly own the means of production, but let AI plan production for them. That way workers can spend more time producing rather than relying on slow democratic processes.",
             "ghent_system": "A welfare model in which unemployment insurance and social benefit funds are administered primarily by trade unions rather than directly by state bureaucracies, encouraging high union membership and decentralized worker solidarity alongside a market economy.",
+            "national_distributism": "A variant of distributism that combines the wide ownership of small-scale property with economic nationalism, using protective tariffs, restrictions on foreign capital, and state support to shield family farms and local enterprises from global corporations.",
+            "social_credit": "An economic theory that advocates for the government paying dividends to consumers while providing subsidies and price adjustments to producers. This is to ensure purchasing power and production are aligned with each other.",
 
             /* Resource Management Values */
             "Voluntaryism": "A system where the state is prohibited from collecting taxes by force. It relies entirely on voluntary taxation, funding public services through consensual donations, lotteries, or service fees rather than mandatory levies.",
@@ -523,6 +543,7 @@ const TRANSLATIONS = {
             "collective_distribution": "An economic principle where goods and services are allocated based on the needs or contributions of the community. It prioritizes shared access over individual ownership to ensure equitable resource management.",
             "regressive_taxation": "A tax system in which the effective tax rate decreases as income or wealth increases—such as uniform per-capita head taxes, payroll caps, or heavy levies on basic necessities—placing a proportionally larger burden on lower-income earners.",
             "state_enterprise_revenue": "A public finance model in which profits, dividends, and resource rents from state-owned enterprises serve as a primary revenue source for public needs and social spending, operating alongside wage labor and supplementary taxation.",
+            "circulus": "A doctrine that taxes people's poop to boost agricultural production. This will boost the economy and lift farmers out of poverty. Or it could tax state-owned farms to boost the productivity of the state.",
 
             /* Culture Values */
             "postmodernism": "A skeptical worldview that questions \"grand narratives,\" objective truth, and traditional authority, emphasizing the role of language, power, and individual perspective.",
@@ -553,6 +574,9 @@ const TRANSLATIONS = {
             "anarchism": "A political philosophy that advocates for self-governed societies based on voluntary institutions and the abolition of the state and all non-voluntary hierarchies.",
             "partocracy": "A form of government where one political party dominates the political process and state apparatus rather than the citizens or individual representatives.",
             "representative_democracy": "A system of government where all eligible citizens vote on representatives to pass laws and govern the country on their behalf.",
+            "parliamentary_democracy": "A form of representative democracy where people vote for a local candidate either directly or via a party list. The Party who wins the most seats will have their leader become prime minister. There is also a ceremonial president, usually elected by a small number of government officials.",
+            "semi_presidential_democracy": "A form of representative democracy that has a directly elected executive president, but appoints a separate head of government This head of government and the president share power.",
+            "presidential_democracy": "A form of representative democracy where the people directly elect an executive president who serves as both the head of state and the head of government.",
             "referendum_democracy": "A system where citizens vote directly on policy initiatives, laws, and constitutional amendments through mandatory or popular referendums, epitomized by the Swiss political model.",
             "councilism": "A revolutionary democratic system where political power is vested in directly elected workers', peasants', and soldiers' councils (soviets or workers' councils).",
             "communalism": "A libertarian socialist framework where citizens govern themselves directly through face-to-face neighborhood and municipal popular assemblies that confederate regionally, as theorized by Murray Bookchin.",
@@ -571,6 +595,8 @@ const TRANSLATIONS = {
             "oligarchy": "A form of governance in which political power is concentrated in the hands of a small, privileged ruling clique—such as wealthy magnates, corporate elites, or entrenched power brokers—who direct state policy to preserve their collective dominance.",
             "semi_constitutional": "A form of monarchy in which a constitution and an elected parliament exist, but the monarch retains substantial executive, legislative, or appointment powers rather than serving as a purely ceremonial figurehead.",
             "ochlocracy": "A form of unrestrained majoritarian rule in which political decisions are driven directly by mass crowds, popular passions, and demagogic mobilization, bypassing constitutional limits, formal procedures, and minority protections.",
+            "kratocracy": "A system of rule based on the principle that might makes right, in which supreme authority belongs to the physically strongest individual as proven through trial by combat.",
+            "noocracy": "A Platonic system of governance in which political power is vested in wise philosophers and thinkers chosen for their moral virtue, rational insight, and devotion to truth rather than wealth, birth, or popular appeal.",
 
             /* Nation Values */
             "Cosmopolitanism": "The idea that all human beings are members of a single community, based on a shared morality that transcends national and local boundaries.",
@@ -600,6 +626,7 @@ const TRANSLATIONS = {
             "irredentism": "A nationalist foreign policy aimed at annexing and reunifying territories beyond current state borders that are inhabited by co-ethnics or bound to the nation by historical claims.",
             "pacifism": "A principled foreign policy opposing war, militarism, and armed violence as instruments of statecraft, advocating unilateral disarmament, nonviolent resistance, and peaceful conflict resolution.",
             "mercantilism": "An economic-nationalist foreign policy focused on maximizing state power through trade surpluses, protective tariffs, export subsidies, and strategic control over critical resources and supply chains.",
+            "neo_colonialism": "A first world foreign policy that is an extreme version of globalism. It advocates for spreading the culture of a richer, more industrialized country onto less developed countries in other continents through free trade and media.",
 
             /* Technology Values */
             "primitivism": "An ideology advocating for the dismantling of technological civilization, agriculture, and the complex division of labor in favor of a return to wild, hunter-gatherer or nomadic living.",
@@ -894,7 +921,7 @@ const TRANSLATIONS = {
             "Nazi-Maoism": "Синкретична екстремістська ідеологія, що виникла в Італії 1960-х років (пов'язана з групами Lotta di Popolo та Франко Фредою). Вона поєднує гітлерівський біологічний расизм і антибуржуазний фанатизм із маоїстською партизанською тактикою, аграрним соціалізмом та солідарністю з антиімперіалістичними повстанськими рухами країн Третього світу.",
             "Savinkovism": "Російська націонал-популістська доктрина з «Kaiserreich», зосереджена навколо Бориса Савінкова («Вождя»). Вона поєднує реваншистську, імперіалістичну зовнішню політику і романтичне національне відродження з державно-спрямованою корпоративною економікою та повною мілітаризацією суспільства в патріотичні бойові загони.",
             "Mosleyism": "Британська фашистська філософія, заснована сером Освальдом Мослі та Британським союзом фашистів (BUF). Вона виступає за заміну партійної парламентської політики професійною корпоративною директорією, поєднуючи державну індустріалізацію з імперською автаркією та післявоєнним баченням єдиної, самодостатньої «Європи — нації».",
-            "Revolutionary Nationalism": "Радикальна антиімперіалістична течія Третього шляху, що поєднує національне визволення та паннаціональну солідарність з антикапіталістичним соціалізмом під управлінням працівників. Відкидаючи як корпоративну глобалізацію, так і жорсткий бюрократичний централізм, вона спирається на децентралізовані синдикати, робітничі гільдії, низове самоврядування та розбудову альтернативної сучасності.",
+            "Monarcho-Syndicalism": "Радикальна антиімперіалістична течія Третього шляху, що поєднує національне визволення та паннаціональну солідарність з антикапіталістичним соціалізмом під управлінням працівників. Відкидаючи як корпоративну глобалізацію, так і жорсткий бюрократичний централізм, вона спирається на децентралізовані синдикати, робітничі гільдії, низове самоврядування та розбудову альтернативної сучасності.",
 
             /* 2. Reactionary */
             "Volkism": "Німецький етнонаціоналістичний рух, що робить акцент на «крові та ґрунті». Він ідеалізує містичний, органічний союз расово чистого народу (фольку), вкоріненого в рідну землю та традиційний фольклор.",
@@ -914,7 +941,7 @@ const TRANSLATIONS = {
             "Mladorossism": "Синкретичний російський монархо-соціалістичний рух 1930-х років, заснований Олександром Казем-Беком під гаслом «Цар і Ради». Він прагне примирити спадкову імперську монархію як духовного главу держави з радянською системою рад, суспільним промисловим плануванням та соціальними гарантіями для робітничого класу.",
             "National Social Capitalism": "Націоналістичний і велферистський сплав національного капіталізму та соціального капіталізму. Він поєднує соціально-ринкову економіку ліво- або правоцентристського спрямування з правим культурним націоналізмом і соціальним шовінізмом.",
             "Right-State Liberalism": "Авторитарна, економічно ультраправа й ультранаціоналістична аналогія державного лібералізму. Вона постулює, що прогресивні цінності — такі як секуляризм, фемінізм, громадянські свободи та євгеніка — є виключно західними цивілізаційними рисами, поєднуючи їх із расовим націоналізмом та імперіалізмом.",
-            "Monarquia Syndicalista": "Португальський націонал-синдикалістський рух, заснований Франсішку Роланом Прету («сині сорочки»). Рішуче виступаючи як проти капіталізму laissez-faire, так і проти «Нової держави» Салазара, він ратує за антибуржуазну соціальну монархію, де партійну політику замінено керованими робітниками торговими синдикатами, католицьким соціальним персоналізмом і муніципальними хартіями за традиційного короля.",
+            "Portuguese Monarcho-Syndicalism": "Португальський націонал-синдикалістський рух, заснований Франсішку Роланом Прету («сині сорочки»). Рішуче виступаючи як проти капіталізму laissez-faire, так і проти «Нової держави» Салазара, він ратує за антибуржуазну соціальну монархію, де партійну політику замінено керованими робітниками торговими синдикатами, католицьким соціальним персоналізмом і муніципальними хартіями за традиційного короля.",
             "Serenissimism": "Класичний патриціанський республіканізм Найсвітлішої Республіки Венеція (La Serenissima). Спираючись на спадкову знать Великої ради (Серрата) та дожа, суворо обмеженого присягою як першого серед рівних, він підтримує громадянську стабільність через закони проти розкоші, цехову регламентацію, державні торговельні конвої й корабельні (Арсенал), митні збори замість прямого оподаткування, прагматичну дипломатію та морське панування над володіннями Stato da Màr.",
 
             /* 3. Conservative */
